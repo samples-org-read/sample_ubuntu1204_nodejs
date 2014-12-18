@@ -3,7 +3,7 @@ language: node_js
 
 
 
-build_image: shippableimages/ubuntu1204_nodejs:0.0.2
+build_image: shippableimages/ubuntu1204_nodejs:0.0.1
 
 # Version number
 node_js:
