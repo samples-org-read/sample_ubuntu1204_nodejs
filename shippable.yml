@@ -3,7 +3,7 @@ language: node_js
 
 
 
-build_image: shippableimages/ubuntu1204_nodejs:0.0.1
+#build_image: shippableimages/ubuntu1204_nodejs
 
 # Version number
 node_js:
@@ -30,3 +30,11 @@ script:
 after_script:
   - ./node_modules/.bin/istanbul cover grunt -- -u tdd
   - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
+images:
+  image:
+    build:
+      type: docker
+      build: true
+      name: shippableimages/ubuntu1204_nodejs
+      tag: latest
+      code_path: /home/avinci/src
