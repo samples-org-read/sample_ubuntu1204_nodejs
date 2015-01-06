@@ -34,4 +34,4 @@ images:
       build: true
       name: shipci/nodejs_1204
       tag: latest
-      code_path: /home/avinci/src
+      code_path: /home/samples_org/src
