@@ -1,8 +1,5 @@
 # Language setting
 language: node_js
-
-
-
 #build_image: shippableimages/ubuntu1204_nodejs
 
 # Version number
@@ -35,6 +32,6 @@ images:
     build:
       type: docker
       build: true
-      name: shippableimages/ubuntu1204_nodejs
+      name: shipci/nodejs_1204
       tag: latest
       code_path: /home/avinci/src
