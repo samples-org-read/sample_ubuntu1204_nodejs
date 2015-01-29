@@ -27,11 +27,11 @@ script:
 after_script:
   - ./node_modules/.bin/istanbul cover grunt -- -u tdd
   - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
-images:
-  image:
-    build:
-      type: docker
-      build: true
-      name: shipci/nodejs_1204
-      tag: latest
-      code_path: /home/samples_org/src
+#images:
+ # image:
+  #  build:
+   #   type: docker
+    #  build: true
+     # name: shipci/nodejs_1204
+    #  tag: latest
+     # code_path: /home/samples_org/src
