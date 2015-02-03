@@ -27,6 +27,8 @@ script:
 after_script:
   - ./node_modules/.bin/istanbul cover grunt -- -u tdd
   - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
+
+commit_container: shipci/node_js_App
 #images:
  # image:
   #  build:
