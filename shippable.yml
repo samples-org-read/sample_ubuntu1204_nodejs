@@ -1,6 +1,6 @@
 # Language setting
 language: node_js
-build_image: shippableimages/ubuntu1404_nodejs:0.0.2
+build_image: shipimg/ubuntu1404_nodejs
 
 # Version number
 node_js:
