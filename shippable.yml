@@ -1,11 +1,12 @@
 # Language setting
 language: node_js
-#build_image: shippableimages/ubuntu1204_nodejs
+build_image: shippableimages/ubuntu1204_nodejs: 0.0.4
 
 # Version number
 node_js:
-  - 0.10
+  - 0.12
   - 0.11
+  
 
 # The path for Xunit to output test reports
 env:
